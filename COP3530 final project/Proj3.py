@@ -26,6 +26,7 @@ import subprocess
 report = energy.get_report()
 
 def reset():
+    window['-STATE-'].update(disabled=False)
     window['-STATE-'].update(ls.USstates)
     window['-CAT1-'].update(ls.blankList)
     window['-CAT2-'].update(ls.blankList)
