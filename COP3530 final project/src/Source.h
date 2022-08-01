@@ -77,9 +77,9 @@ void mergeSort(vector<float>& data, int left, int right)
 // use in quickSort
 int partition(vector<float>& data, int low, int high)
 {
-	int pivot = data[low];
-	int up = low;
-	int down = high;
+	float pivot = data[low];
+	float up = low;
+	float down = high;
 
 	while (up < down)
 	{
@@ -111,7 +111,7 @@ void quickSort(vector<float>& data, int low, int high)
 {
 	if (low < high)
 	{
-		int pivot = partition(data, low, high);
+		float pivot = partition(data, low, high);
 		quickSort(data, low, pivot - 1);
 		quickSort(data, pivot + 1, high);
 	}

@@ -97,7 +97,6 @@ def executeProgram():
     if values['-YEAR-'] == ['None'] and values['-CAT4-'][0] != 'None':
         for x in range(ls.statesToInt[values['-STATE-'][0]]*60, ls.statesToInt[values['-STATE-'][0]]*60 + 60):
             unsortedList.append(report[x][values['-CAT1-'][0]][values['-CAT2-'][0]][values['-CAT3-'][0]])
-            
         #map years to data values in the unsorted list, this way we can rematch when data is sorted later
         valMap = {}
         for x in range(0, len(unsortedList)):
@@ -141,6 +140,7 @@ def executeProgram():
         #we reverse the sorted list so that the graphs are more visually appealing.
         #it was necessary to have them in ascending order at first for mapping.
         sortedList.reverse()
+        
         #this function creates an abbreviated list of years in line with the sortedYears list.
         #this makes it easier to read on the bar graph.
         ls.mapAbrevYears(sortedYears)
