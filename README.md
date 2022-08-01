@@ -5,4 +5,4 @@ Alex Hu
 "The Team With A Really Cool Name"
 Project Name: Quick Energy Information Visualization
 
-To run, just open the Python file.
+To run, just download the folder and open the python file.
